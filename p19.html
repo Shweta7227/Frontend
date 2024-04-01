@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>
+            Addition of martix:
+        </title>
+    </head>
+    <body>
+        <Script>
+            var a=[];
+            var b=[];
+            var c=[];
+            document.write("Enter the 3*3 matrix:");
+            for(var i=0;i<3;i++) 
+            { a[i] = [];
+                for(var j=0;j<3;j++)
+                {
+                    a[i][j]=Number(prompt("Enter one martix"));
+
+                }
+
+            }
+            document.write("First matrix:");
+            for(var i=0;i<3;i++){
+                document.write("<br/>");
+                for(var j=0;j<3;j++){
+                    document.write(a[i][j]+" ");
+                    
+                }
+            }
+            for(var i=0;i<3;i++) 
+            { b[i] = [];
+                for(var j=0;j<3;j++)
+                {
+                    b[i][j]=Number(prompt("Enter two martix"));
+
+                }
+
+            }
+            document.write("<br/>");
+            document.write("Second matrix:");
+            for(var i=0;i<3;i++){
+                document.write("<br/>");
+                for(var j=0;j<3;j++){
+                    document.write(b[i][j]+" ");
+                }
+            }
+            //addition of matrices
+            
+            for(var i=0;i<3;i++){
+                c[i] = [];
+                for(var j=0;j<3;j++){
+                    c[i][j]=a[i][j]+b[i][j];
+                }
+            }
+            document.write("<br/>");
+            document.write("addition of matrices:");
+            for(var i=0;i<3;i++){
+                document.write("<br/>");
+                for(var j=0;j<3;j++){
+                    document.write(c[i][j]+" ");
+                }
+            }
+
+        </Script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            Largest number in an largest
+        </title>
+    </head>
+    <body>
+        <script>
+            var a =[];
+            let max =0;
+            for(var i=0;i<5;i++)
+            {
+                a[i] =Number(prompt("Enter the value in an array: "));
+
+            }
+            for(var i=0;i<5;i++)
+            {
+                document.write(a[i],"<br/>");
+
+            }
+            for(var i=0;i<5;i++)
+            {
+                if(a[i]>max)
+                {
+                    max = a[i];
+
+                }
+            }
+            document.write("Largest element in an array is:" +max);
+
+        </script>
+    </body>
+</html>
