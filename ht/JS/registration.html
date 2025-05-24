@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>
+            my registration form
+        </title>
+    </head>
+    <body>
+
+        <form action="#" method ="post">
+            <Label for="name">
+                Name:
+            </Label>
+            <input type="text" id="name"/>
+            <br/><br/>
+            <Label for="email">
+                Email:
+            </Label>
+            <input type="email" id="email"/>
+            <br/><br/>
+            <Label for="mb">
+                Mobile no:
+            </Label>
+            <input type="tele" id="mb"/>
+            <br/><br/>
+            <label for="pwd">
+                Password:
+            </label>
+            <input type="password" id="pwd"/>
+            <br/><br/>
+            <label for="dob">
+                Date Of Birth:
+            </label>
+            <input type="date" id="dob"/>
+            <br/><br/>
+
+            
+
+            
+        </form>
+        <button onclick = {ab()}>SUBMIT</button>
+        
+
+    
+        <script>
+                function ab(){
+                    var name = document.getElementById("name").value;
+                    var email = document.getElementById("email").value;
+
+                    var mobile =document.getElementById("mb").value;
+            
+                    var password = document.getElementById("pwd").value;
+                    var  DOB = document.getElementById("dob").value;
+                    if(name==""||email==""||mobile ==""|| password==""||DOB=="" ){
+                        alert("please fill the blanks");
+                    }
+                    else if(isNaN(mobile))
+                    {
+                        alert("only numbers are allowed");
+                    }
+                    else if(mobile.length<10||mobile.length>10){
+                             alert("please enter 10 digits mobile number");
+                    }
+
+                }
+            </script>
+    </body>
+</html>
