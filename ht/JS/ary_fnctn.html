@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            array declaration through instance
+        </title>
+    </head>
+    <body>
+        <script>
+            var a = new Array();
+            a[0]= "C is";
+            a[1] = "C++";
+            a[2] = "Java";
+            a[3] = "Python";
+            var f = ["R"];
+            // array methods are:
+            a.push("PHP"); // insertion at end
+            
+
+            a.unshift("HTML"); // insertion at beginning
+           a.pop(); // deletion from end
+           a.shift(); // deletion at beginning
+           
+            for(var i=0; i<a.length; i++)
+            {
+                document.write(a[i]+"<br>");
+            }
+            var b = a.join( " Shweta "); // join method
+            document.write(b+"<br>");
+            var c = a.slice(0,2); // slice method
+            document.write(c+"<br>");
+            // var d = a.split(" "); // split method
+            // document.write(d+"<br>");
+            var e = a.concat(f); // concat method
+            document.write(e+"<br>");
+           
+            
+            
+        </script>
+    </body>
+</html>
