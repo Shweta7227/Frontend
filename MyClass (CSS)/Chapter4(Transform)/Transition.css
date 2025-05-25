@@ -1,0 +1,20 @@
+div{
+    height:200px;
+    background-color:blueviolet;
+    width:200px;
+    margin: 0 auto;
+    /* transition-duration: 1s;
+    transition-delay:0.8s; */
+    /* transition: margin-top 2s ease-in 0.8s;
+    transition: background-color 2s  0.8s;
+    transition: border-radius 2s  0.8s; */
+}
+div:hover{
+    background-color: burlywood;
+    margin-top:400px;
+    border-radius:50%;
+    /* transition-property: all; */
+    transition-duration: 10s;
+    transition-delay:2s;
+     transition-property:ease-in-out;
+}
