@@ -1,0 +1,25 @@
+#container
+{
+    height: 300px;
+    width:80%;
+    background-color: azure;
+    margin:10px auto;
+    border:2px solid black;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap-reverse;
+    align-items:start;
+    justify-content: space-evenly;
+    /* align-content: flex-start;  */
+
+}
+h1{
+    text-align: center;
+}
+#container div{
+    height:100px;/*flex display will ignore these value and try to fit  ifthe sizeof inner divs are bigger than outer*/
+    width: 100px;
+    color: white;
+    text-align: center;
+}
