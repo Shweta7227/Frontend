@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action">
+        <label>
+            Select your subject:
+        </label><br>
+        <input checked type="checkbox" id="one"  name="sub" value="AI/ML"/>
+        <label for="one">AI/ML</label><br>
+        <input type="checkbox" id="two" name="sub" value="Architecture"/>
+        <label for="two">Architecture</label><br>
+        <input  type="checkbox" id="three" name="sub" value="Discrete Mathematics"/>
+        <label for="three">Discrete Mathematic</label><br>
+        <input type="checkbox" id="four" name="sub" value="DAA"/>
+        <label  for="four">DAA</label><br>  
+        <input checked type="checkbox" id="five" name="sub" value="Distributed"/>
+        <label for="five">Distributed</label><br>
+        <input checked  type="checkbox" id="six" name="sub" value="Big Data"/>
+        <label for="six">Big Data</label><br>
+        <input type="checkbox" id="seven" name="sub" value="TOC"/>
+        <label for="seven">TOC</label><br>
+        <input type="submit"  value="submit">
+    </form>
+</body>
+</html>
+<!-- http://127.0.0.1:5500/action?sub=AI%2FML&sub=Distributed&sub=Big+Data -->
+ <!-- http://127.0.0.1:5500/action?sub=AI%2FML&sub=Discrete+Mathematics&sub=DAA&sub=Big+Data -->
