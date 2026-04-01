@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing of selectors</title>
+    <link rel="stylesheet" href="Testing3.css">
+</head>
+<body>
+    <h1>Let's check Descendent Selector</h1>
+    <div>
+        This is my first level
+        <b>This is my second level and bold chars</b>
+        <p>This is second level param <b>Bold 3</b></p>
+        <pre>This is also second level param 
+            <span>Span of thirs level <b>4th bold</b>
+                <ul>This is starting of unordered list fourth level
+                    <b>5th bold</b>
+                    <li>This is fifth level li 1</li>
+                    <li>This is fifth level <b> 6th bold</b> li 2</li>
+                    <li>This is fifth level <a href="https://www.google.com">Google</a> li 3</li>
+
+                </ul>
+            </span>
+        </pre>
+    </div>
+    <h1>Let's check Sibling Selector</h1>
+    <p>this is para 1 here <h3>this is subheading</h3>  <h3>second subheading</h3>   </p>
+    <h3>heading 1</h3>
+    <h1>heading 2 <h3>subheading</h3></h1>
+    <h3>heading 3</h3>
+    <h2>heading 4th</h2>
+
+    <h1>Let's check Child Selector</h1>
+    <pre>this is first pre <h3>subheading 1 <h4>this is my heading of inside the subheading 1</h4></h3> <h3>subheading 2</h3> <h3>subheading 3</h3></pre>
+    <h3>this is next heading immediate one</h3>
+    <span>this is next  <h3>subheading in span</h3></span>
+    <h3>this is second hrading but on the same level</h3>
+
+</body>
+</html>

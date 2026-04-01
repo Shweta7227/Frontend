@@ -1,0 +1,16 @@
+div b{
+    color: rgb(255, 13, 45);
+}
+div pre span ul li{
+    color:rgb(238, 88, 64);
+}
+p+h3{
+    color: red;
+}
+h3+h2{
+    color:blue;
+}
+
+pre>h3{
+    color: rgb(241, 112, 241);
+}
