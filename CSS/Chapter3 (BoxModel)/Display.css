@@ -1,0 +1,16 @@
+span{
+    /* background-color: #525352; */
+    border: 2px solid #000000;
+    height:50px;
+    width:100px;
+    margin:20px;
+    padding: 20px;
+}
+div{
+    background-color: #f10707;
+    border: 2px solid #000000;
+    height:50px;
+    width:50px;
+    margin:20px;
+    padding:20px;
+}

@@ -1,0 +1,35 @@
+div{
+    height:500px;
+    width:500px;
+    background-color: #f2ff00;
+    border: 3px solid #000000;
+    margin:20px;
+    padding:20px;
+    display:inline-block;
+}
+span{
+    height:500px;
+    width:500px;
+    background-color: #a7a8a7;
+    border: 3px solid #000000;
+    margin:20px;
+    padding: 20px;
+    display:inline-block;
+    box-shadow:1px 5px 200px #2dde39;
+    background-image: url("bg-img.avif");
+    background-size: contain;
+
+}
+#first{
+    background-image: url("bg-img.avif");
+    background-size: cover;
+    box-shadow:1px 5px 200px #454642;
+
+
+}
+#second{
+    background-image: url("bg-img.avif");
+    background-size:auto;
+    box-shadow:1px 5px 200px #be4a0b;
+
+}

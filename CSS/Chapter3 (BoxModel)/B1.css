@@ -1,0 +1,17 @@
+h1{
+    height:50px;
+   margin:20px;
+   padding:20px;
+   width:100px;
+}
+p{
+    height:300px;
+    width:500px;
+    border: 5px dashed black;
+    margin: 0px;
+    padding:20px
+}
+#p1{
+    margin-bottom:20px;
+}
+
