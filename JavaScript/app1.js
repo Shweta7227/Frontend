@@ -83,4 +83,64 @@ for(let i=fruits.length-1;i>=0;i--)
 {
     console.log(i,fruits[i]);
 }
+//nested loop with normal array(1d array)
+let friends=["Rohit", "Deepti","Monika","Ashoka","Akshit"];
+for(let i=0;i<friends.length;i++)
+{
+    console.log("traversing of index ",i);
+    for(let j=i;j<friends[i].length;j++)
+    {
+        console.log(friends[i][j]);
+    }
+}
+//nested loop with nested array:
+
 let heroes=[["iron","spiderman","thor"],["superman","woder woman","flash"]];
+for(let i=0;i<heroes.length;i++)
+{
+    console.log("traversing of index ",i);
+    for(let j=0;j<heroes[i].length;j++)
+    {
+        console.log(heroes[i][j]);
+    }
+}
+// nested array of different size:
+let actors = [
+    ["iron", "spiderman", "thor"],
+    ["superman", "flash"],
+    ["batman"]
+];
+for(let i=0;i<actors.length;i++)
+{
+    console.log("traversing of index ",i);
+
+    for(let j=0;j<actors[i].length;j++)
+    {
+        console.log(actors[i][j]);
+    }
+}
+// FOR OF BASICALLY SPLIT OUT ONE LEVEL UNDER
+//for of loop on variable
+let name="Shweta Sindhu";
+for(char of name)
+{
+    console.log(char);
+}
+//for of loop on an array:
+let names=["Rinku","Shweta","Deepak","Sattu","Ritu"];
+for(name of names){
+    console.log(name);
+}
+//nested for of loop:
+for(list of heroes)
+{
+    console.log(list);
+    for(name of list)
+    {
+        console.log(name);
+        for(vari of name)
+        {
+            console.log(vari);
+        }
+    }
+}
