@@ -1,7 +1,8 @@
 div{
     width: 400px;
     height:400px;
-    
+    margin:100px;
+    background-color: antiquewhite;
     background-image: url("james-chan-BODZzJi5lwo-unsplash.jpg");
     background-size: cover;
     /* background-size: auto;
