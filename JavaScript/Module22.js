@@ -5,7 +5,7 @@ let student={
     DSA:100,
     WebDev:100,
     english:100,
-    getAvg(){
+    getAvg(){s
         console.log(this);
         let avg=(this.DSA+this.english+this.WebDev)/3;
         console.log(`${this.name} got overall ${avg} marks`);
@@ -35,7 +35,7 @@ console.log("Hii"); //without try & catch this line will not execute
 // Arrow functions in higher order functions
 let sum = (a,b)=>{return (a+b);} //these curly braces are for multiple lines of code single line direclty is also allowed;
 let value=function(sum){
-    
+
     console.log(  `the sum of is ${sum(21,3)}`);
 }
 value(sum);
@@ -124,6 +124,52 @@ let number=setInterval(
 setTimeout(()=>{console.log("Terminated!!")},12000);
 
 //alternative:
-
 let id=setInterval(()=>{console.log("Hiii!!")},2000);
 setInterval(()=>{clearInterval(id)},10000);
+
+//Assignment -7
+// Q1. Write an arrow function named arrayAverage that accepts anarray of numbers and returns the average of those numbers
+let arrayAverage = (a) => {
+    let n = a.length;
+    let sum = 0; //you must have to intialize it first otherwise it's dataype will be undefined nd further operation will make it NAN : undefined +1----> NAN 
+    for (let i = 0; i < n; i++) {
+        sum += a[i];
+    }
+    return sum / n;
+}
+let a = [1, 2, 3, 4, 5, 6];
+console.log(arrayAverage(a));
+
+//Q2. WriteanarrowfunctionnamedisEven()thattakesasinglenumberasargumentandreturnsifitisevenornot.
+let number = even => {
+    if (even % 2 == 0) {
+        return true;
+    }
+    return false;
+}
+
+console.log(number(32));
+
+//Q3.Whatistheoutputofthefollowingcode
+const object = { 
+    message : "Hello World!", 
+    logMessage() {
+        console.log(this.message); 
+    } 
+}; 
+setTimeout(object.logMessage(), 1000);
+// Q4.
+let length=4;
+function callback(){
+    console.log(this.length);
+}
+const object1={
+    length:5,
+    method(callback){
+        callback();
+    },
+};
+object1.method(callback,1,2);
+
+// console.log(this.logMessage);
+
