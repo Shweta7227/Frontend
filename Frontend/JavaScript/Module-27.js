@@ -5,8 +5,7 @@ let fourth = document.querySelector('#fourth');
 let fifth = document.querySelector('#fifth');
 
 //This is having 1.repeated timeset call 2.again and again repeating the color 3. need to calculate the time:)
-
-// //first color
+//first color
 
 setTimeout(() => {
     first.style.color = "red";
@@ -92,3 +91,18 @@ let req =changeColor4("red",1000)
         console.log("error: ",error);
         console.log("Color change req is rejected somewhere");
     })
+
+//break point :)
+function one(){
+    return 1;
+}
+function two(){
+    return one() + one();
+
+}
+function three(){
+    debugger;
+    let ans=  two() + one();
+     console.log(ans);
+}
+three();
